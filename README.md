@@ -18,25 +18,29 @@
 The application serves as a tool for comparing faces in images with faces stored in a database, and for determining the presence of person in image, as well as whether there is more than one person in a image.<br> 
 <b>Here's how it works:</b>
 <ul>
-  <li>Face Comparison: </li>
-    <dl>Input:</dl>
-      <dd>- The application receives an object containing the first image (the image to be searched for) and the images stored in the database.</dd>
-    <dl>Process:</dl>
-      <dd>- It compares the provided image with each image stored in the database until a similar match is found it return data. If no similar images are found, a "not found" message is returned.</dd>
- 
-  <li>Presence of person in image:
-    <dt>Input:
-      <dd>- send an image to determine if there are person in it.</dd>
-    </dt>
-    <dt>Process:
-      <dd>- The application analyzes the image to identify any objects (person). If person are found, it returns an approval message for the photo; otherwise, it returns a rejection message.</dd>
-    </dt>
-  </li>
-  <li>Detection of Single vs. Multiple Persons: </li>
-    <dl>Input:</dl>
-      <dd>- send an image to verify if it contains one or more persons.</dd>
-    <dl>Process:</dl>
-      <dd>- The application examines all objects in the image. If only one person is found, it returns an approval message, if more than one person is detected, it returns a rejection message.</dd>
- 
+<li><b>Face Comparison:</b><br>
+<dl>
+  <dt>Input:</dt>
+  <dd>- The application receives an object containing the first image (the image to be searched for) and the images stored in the database.</dd>
+  <dt>Process:</dt>
+  <dd>- It compares the provided image with each image stored in the database until a similar match is found it return data. If no similar images are found, a "not found" message is returned.</dd>
+</dl>
+</li>
+<li><b>Presence of person in image:</b>
+<dl>
+  <dt>Input:</dt>
+  <dd>-  send an image to determine if there are person in it.</dd>
+  <dt>Process:</dt>
+  <dd>- The application analyzes the image to identify any objects (person). If person are found, it returns an approval message for the image, otherwise, it returns a rejection message.</dd>
+</dl>
+</li>
+ <li><b>Detection of Single vs. Multiple Persons:</b>
+<dl>
+  <dt>Input:</dt>
+  <dd>-  send an image to verify if it contains one or more persons.</dd>
+  <dt>Process:</dt>
+  <dd>- The application examines all objects in the image. If only one person is found, it returns an approval message, if more than one person is detected, it returns a rejection message.</dd>
+</dl>
+</li>
 </ul>
 </p>
